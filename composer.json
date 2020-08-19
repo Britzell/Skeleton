@@ -38,7 +38,7 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "PHPFramework\\Console::createProject"
+      "PHPFramework\\Console\\Command\\CreateProject::init"
     ]
   }
 }
