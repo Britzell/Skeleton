@@ -1,6 +1,6 @@
 {
   "name": "britzel/web",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "type": "project",
   "license": "MIT",
   "minimum-stability": "stable",
@@ -37,8 +37,8 @@
     }
   },
   "scripts": {
-    "post-install-cmd": [
-      "PHPFramework\\Console\\Command\\CreateProject::init"
+    "post-package-install": [
+      "PHPFramework\\Console\\Command\\CreateProject::postPackageInstall"
     ]
   }
 }
