@@ -1,0 +1,44 @@
+{
+  "name": "britzel/web",
+  "version": "v0.1.0",
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Britzel",
+      "email": "britzel99@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "britzel/router": "dev-master",
+    "phpframework/core": "dev-master",
+    "phpframework/console": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:Britzell/Core.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Britzell/Console.git"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "PHPFramework\\Console::createProject"
+    ]
+  }
+}
