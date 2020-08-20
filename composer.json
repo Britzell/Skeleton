@@ -12,6 +12,7 @@
 	],
 	"require": {
 		"php": "^7.2",
+		"britzel/router": "dev-master",
 		"phpframework/core": "dev-master",
 		"phpframework/console": "dev-master"
 	},
